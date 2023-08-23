@@ -5,10 +5,11 @@ class Persona {
      }
 }
 
-let personas = Array(Persona);
+const personas = [];
 let sumaEjer7 = 0;
 let cadenasTextoEjer8 = "";
-let egresadosEjer13 = Array(String);
+const egresadosEjer13 = [];
+const numerosEjer14 = [];
 
 function mayorEdad(){
      let contenidoInput = document.getElementById("edad");
@@ -55,7 +56,7 @@ function personaMayor(){
 
      personas.sort(function(a, b){return b.edad - a.edad});
 
-     resultado.innerHTML = "La persona mayor es " + personas[1].nombre;
+     resultado.innerHTML = "La persona mayor es " + personas[0].nombre;
 }
 
 function textoAMayuscula(){
@@ -198,10 +199,31 @@ function agregarEgresado(){
 function mostrarEgresados(){
      let resultado = document.getElementById("resultadoEjer13");
 
-     console.log(egresadosEjer13);
      resultado.innerHTML = "Los egresados son:" + "<br>";
 
-     for(let i = 1; i<egresadosEjer13.length; i++){
+     for(let i = 0; i<egresadosEjer13.length; i++){
           resultado.innerHTML += egresadosEjer13[i] + "<br>";
      }
 }
+
+function agregarNumero(){
+     let numeroIngresado = document.getElementById("numerosEjer14").value;
+     let resultado = document.getElementById("resultadoEjer14");
+     if(numerosEjer14.length == 0){
+          resultado.innerHTML = "";
+     }
+     numerosEjer14.push(numeroIngresado);
+}
+
+function encontrarMenorYMayor(){
+     let resultado = document.getElementById("resultadoEjer14");
+
+     const numeroMenor = Math.min(...numerosEjer14);
+     const numeroMayor = Math.max(...numerosEjer14);
+
+     resultado.innerHTML = "El numero más pequeño de los ingresados es el: " + numeroMenor + "<br>";
+     resultado.innerHTML += "Y el numero más grande de los ingresados es el: " + numeroMayor;
+
+     numerosEjer14.splice(0, numerosEjer14.length)
+}
+
