@@ -166,10 +166,24 @@ function calcularAreaCirculo(){
      let resultado = document.getElementById("resultadoEjer11");
      let radioIngresado = document.getElementById("radioEjer11").value;
 
-     console.log(parseFloat(radioIngresado)^2)
-     console.log(parseFloat(radioIngresado))
-
      let area = Math.PI * (Math.pow(parseFloat(radioIngresado), 2));
 
      resultado.innerHTML = "El area del círculo es: " + area;
+}
+
+function determinarSigno(){
+     let resultado = document.getElementById("resultadoEjer12");
+     let numeroIngresado = document.getElementById("numeroEjer12"). value;
+
+     switch(Math.sign(numeroIngresado)){
+          case 1:
+               resultado.innerHTML = "El número ingresado es positivo";
+               break;
+          case -1:
+               resultado.innerHTML = "El número ingresado es negativo";
+               break;
+          default:
+               resultado.innerHTML = "El número ingresado es cero";
+               break;
+     }
 }
