@@ -194,6 +194,7 @@ function agregarEgresado(){
      let usuarioIngresado = document.getElementById("egresadosEjer13").value;
 
      egresadosEjer13.push(usuarioIngresado);
+     egresadosEjer13.sort();
 }
 
 function mostrarEgresados(){
