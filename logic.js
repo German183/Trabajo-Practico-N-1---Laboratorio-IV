@@ -227,3 +227,11 @@ function encontrarMenorYMayor(){
      numerosEjer14.splice(0, numerosEjer14.length)
 }
 
+function contarPalabras(){
+     let cadenaIngresada = document.getElementById("cadenaEjer15").value;
+     let resultado = document.getElementById("resultadoEjer15");
+
+     const cadenaDividida = cadenaIngresada.split(" ")
+
+     resultado.innerHTML = "La cadena ingresada tiene un total de " + cadenaDividida.length + " palabras";
+}
