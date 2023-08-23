@@ -8,6 +8,7 @@ class Persona {
 let personas = Array(Persona);
 let sumaEjer7 = 0;
 let cadenasTextoEjer8 = "";
+let egresadosEjer13 = Array(String);
 
 function mayorEdad(){
      let contenidoInput = document.getElementById("edad");
@@ -185,5 +186,22 @@ function determinarSigno(){
           default:
                resultado.innerHTML = "El número ingresado es cero";
                break;
+     }
+}
+
+function agregarEgresado(){
+     let usuarioIngresado = document.getElementById("egresadosEjer13").value;
+
+     egresadosEjer13.push(usuarioIngresado);
+}
+
+function mostrarEgresados(){
+     let resultado = document.getElementById("resultadoEjer13");
+
+     console.log(egresadosEjer13);
+     resultado.innerHTML = "Los egresados son:" + "<br>";
+
+     for(let i = 1; i<egresadosEjer13.length; i++){
+          resultado.innerHTML += egresadosEjer13[i] + "<br>";
      }
 }
