@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/logic.js"></script>
+</head>
+<body>
+    
+    <div id="titulo">
+        <h1>TRABAJO PRÁCTICO N°1</h1>
+    </div>
+    <div id="contenedorGral">
+        
+        <div id="ejercicio1">
+            <h2>Ejercicio 1</h2>
+            <p>Recibir una edad y mostrar si es mayor de edad o no.</p>
+            <input type="number" id="edad" placeholder="Ingrese su edad">
+            <input type="submit" id="botonEjer1" value="Confirmar" onclick="mayorEdad()">
+            <p id="resultadoEjer1"></p>
+        </div>
+        
+        <div id="ejercicio2">
+            <h2>Ejercicio 2</h2>
+            <p>Recibir una nota y mostrar su calificación correspondiente</p>
+            <ul id="itemsEjer2">
+                <li>0-2: Muy deficiente</li>
+                <li>3-4: Insuficiente</li>
+                <li>5-6: Suficiente</li>
+                <li>7-8: Bien</li>
+                <li>9: Notable</li>
+                <li>10: Sobresaliente</li>
+            </ul>
+            <input type="number" id="nota" placeholder="Ingrese su nota">
+            <input type="submit" id="botonEjer2" value="Confirmar" onclick="calificacion()">
+            <p id="resultadoEjer2"></p>
+        </div>
+
+        <div id="ejercicio3">
+            <h2>Ejercicio 3</h2>
+            <p>Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor.</p>
+            <div id="inputsEjer3">
+                <input type="text" id="nombre1" placeholder="Nombre de primera persona">
+                <input type="number" id="edad1" placeholder="Edad de primera persona">
+                
+                <input type="text" id="nombre2" placeholder="Nombre de segunda persona">
+                <input type="number" id="edad2" placeholder="Edad de segunda persona">
+                
+                <input type="text" id="nombre3" placeholder="Nombre de tercera persona">
+                <input type="number" id="edad3" placeholder="Edad de tercera persona">
+                
+                <input type="submit" id="botonEjer3" value="Confirmar" onclick="personaMayor()">
+                <p id="resultadoEjer3"></p>
+            </div>
+        </div>
+        
+        <div id="ejercicio4">
+            <h2>Ejercicio 4</h2>
+            <p>Realiza un script que pida un texto y lo muestre en mayúsculas.</p>
+            <input type="text" id="textoMinusculas" placeholder="Texto en minúsculas">
+            <input type="submit" id="botonEjer4" value="Confirmar" onclick="textoAMayuscula()">
+            <p id="resultadoEjer4"></p>
+        </div>
+        
+        <div id="ejercicio5">
+            <h2>Ejercicio 5</h2>
+            <p>Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :</p>
+            <ul id="itemsEjer5">
+                <li>1</li>
+                <li>22</li>
+                <li>333</li>
+                <li>4444</li>
+                <li>55555</li>
+            </ul>
+            <input type="submit" id="botonEjer5" value="Mostrar resolución" onclick="piramide(30)">
+            <p id="piramide"></p>
+        </div>
+
+        <div id="ejercicio6">
+            <h2>Ejercicio 6</h2>
+            <p>Realiza un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9.</p>
+            <input type="submit" id="botonEjer6" value="Mostrar resolución" onclick="resaltarMultiplos(500, 4, 9)">
+            <p id="resultadoEjer6"></p>
+        </div>
+
+        <div id="ejercicio7">
+            <h2>Ejercicio 7</h2>
+            <p>Realiza un script que pida números hasta que se ingrese 0. Si no es un número deberá indicarse con un «alert» y seguir pidiendo. Al salir con 0 deberá indicarse la suma total de los números introducidos.</p>
+            <input type="text" id="numerosEjer7" placeholder="Ingrese números">
+            <input type="submit" id="botonEjer7" value="Sumar número" onclick="sumarNumeros()">
+            <p id="resultadoEjer7"></p>
+        </div>
+
+        <div id="ejercicio8">
+            <h2>Ejercicio 8</h2>
+            <p>Realiza un script que pida cadenas de texto hasta que se ingrese “fin”. Al salir con “fin” deben mostrarse todas las cadenas concatenadas con un guión (-).</p>
+            <input type="text" id="cadenasEjer8" placeholder="Ingrese una cadena">
+            <input type="submit" id="botonEjer8" value="Ingresar cadena" onclick="unirCadenas()">
+            <p id="resultadoEjer8"></p>
+        </div>
+
+        <div id="ejercicio9">
+            <h2>Ejercicio 9</h2>
+            <p>Realiza un script que cuente el número de vocales que tiene un texto.</p>
+            <input type="text" id="cadenaEjer9" placeholder="Ingrese una cadena">
+            <input type="submit" id="botonEjer9" value="Confirmar" onclick="contarVocales()">
+            <p id="resultadoEjer9"></p>
+        </div>
+
+        <div id="ejercicio10">
+            <h2>Ejercicio 10</h2>
+            <p>Realiza un script que pida una cadena de texto y la devuelva al revés.</p>
+            <input type="text" id="cadenaEjer10" placeholder="Ingrese una cadena">
+            <input type="submit" id="botonEjer10" value="confirmar" onclick="invertirCadena()">
+            <p id="resultadoEjer10"></p>
+        </div>
+
+        <div id="ejercicio11">
+            <h2>Ejercicio 11</h2>
+            <p>Crea un programa que calcule el área de un círculo. Pide al usuario que ingrese el radio y muestra el resultado.</p>
+            <input type="text" id="radioEjer11" placeholder="Ingrese el radio del círculo">
+            <input type="submit" id="botonEjer11" value="Calcular" onclick="calcularAreaCirculo()">
+            <p id="resultadoEjer11"></p>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+#contenedorGral{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#ejercicio1, #ejercicio2, #ejercicio3, #ejercicio4, #ejercicio5, #ejercicio6, #ejercicio7, #ejercicio8, #ejercicio9, #ejercicio10, #ejercicio11 {
+    margin-top: 200px;
+    background-color: #f3f2e3;
+    border-width: 1px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 100px;
+    width: 600px;
+    margin: 5px;
+    text-align: center;
+}
+
+#inputsEjer3 {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#itemsEjer2, #itemsEjer5 {
+    text-align: left;
+}
+
+#piramide {
+    text-align: left;
+}
+
+#resultadoEjer6 {
+    text-align: justify;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #dde4176f;
+}
